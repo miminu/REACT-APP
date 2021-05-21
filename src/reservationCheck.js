@@ -4,6 +4,8 @@ import { RenderAfterNavermapsLoaded } from 'react-naver-maps';
 import { Link } from 'react-router-dom'
 import "./reservationCheck.css";
 import NaverMapAPI from "./NaverAPIMap.js";
+import mark from "./mark.png";
+import mapmark from "./mapmark.png";
 
 class reservationCheck extends Component {
     constructor(props) {
@@ -48,25 +50,28 @@ class reservationCheck extends Component {
   
     render(){
       return (
-        <body>
+        <div>
           <Link to="/">
-          <h1 class="logo">Walking On The Cloud</h1>
+          <h1 className="logo">Walking On The Cloud</h1>
           </Link>
-          <h2 class="description">European Restaurant & Bar</h2>
+          <h2 className="description">European Restaurant & Bar</h2>
           <hr></hr>
           <div id="content">
-            <h1 class="main-head">YOUR RESERVATION</h1>
+            <h1 className="main-head">YOUR RESERVATION</h1>
             <div class="main-middle">
               <h4>예약 내역</h4>
               <hr></hr>
-              <p>예약 일시 | 2021.5.4(화) 오후 17:30</p>
-              <p>예약 인원 | 2명</p>
+              <div id="main-middle">
+                <p>예약 일시 | 2021.5.4(화) 오후 17:30</p>
+                <p>예약 인원 | 2명</p>
+              </div>
               <br></br>
-              <p>알립니다!</p>
+              <p><img src={mark} width='15' height='15' alt='mark' />&nbsp;알립니다!</p>
               <hr></hr>
-              <p>예약 후 사정상 못 나오실 경우 미리 예약취소 부탁드립니다.</p>
-              <p>동시간대 손님이 몰릴경우 음식이 다소 늦게 나오는 점 미리 양해 말씀드립니다.</p>
-            
+              <div id="main-middle">
+                <p>예약 후 사정상 못 나오실 경우 미리 예약취소 부탁드립니다.</p>
+                <p>동시간대 손님이 몰릴경우 음식이 다소 늦게 나오는 점 미리 양해 말씀드립니다.</p>
+              </div>
               <div class="map">
                 <RenderAfterNavermapsLoaded
                   ncpClientId={'wsxmj4f2y1'} 
@@ -75,11 +80,11 @@ class reservationCheck extends Component {
                 >
                   <NaverMapAPI />
                 </RenderAfterNavermapsLoaded>
-                <p>서울 영등포구 63로 50 한화금융센터_63 59층</p>
+                <p><img src={mapmark} width='15' height='15' alt='mapmark' />&nbsp;서울 영등포구 63로 50 한화금융센터_63 59층</p>
                 <p>Tel. 02 - 1234 - 1234</p>
               </div>
             </div>
-            <div class="main-foot">
+            <div>
               <button onClick={this._openchangeModal.bind(this)}>예약 변경</button>
               <button onClick={this._opencancelModal.bind(this)}>예약 취소</button>
               <Modal visible={this.state.changevisible} width="400" height="300"  effect="fadeInDown" onClickAway={() => this._closechangeModal()}>
@@ -133,7 +138,7 @@ class reservationCheck extends Component {
                 </Modal>
             </div>
           </div>
-        </body>
+        </div>
       );
     }
   }
