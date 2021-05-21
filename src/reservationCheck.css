@@ -1,0 +1,72 @@
+body {
+     margin: 0 auto;
+    background: #fafaef;
+}
+h4 {margin: 5px;}
+p { margin: 5px; }
+.logo {
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 0;
+}
+.description {
+    font-size: 15px; 
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+#content {
+    text-align: center;
+    width: 800px;
+    margin: 0 auto;
+}
+.main-head {
+    padding: 50px 0; margin: 20px;
+}
+.main-middle{
+    margin:50px 100px; 
+    text-align: left;
+}
+.map{
+    margin-top: 70px;
+    text-align: center;
+}
+.map p{
+    margin: 5px;
+}
+button {
+    width: 250px; height: 40px;
+    margin: 50px;
+    background-color: lightgrey;
+    border-radius: 5px;
+    border: 0;
+}
+div[id="modal"] {
+    background: #fafaef;
+}
+.modal-middle{
+    margin:30px 40px 50px 50px; 
+    text-align: left;
+    font-size: 14px;
+}
+.modal-cancel{
+    margin: 70px 50px; 
+}
+button[id="modal"] {
+    width: 100px; height: 40px;
+    margin: 21px;
+    background-color: lightgrey;
+    border-radius: 5px;
+    border: 0;
+}
+button[id="close"] {
+    float: right;
+    margin: 10px;
+    width: 20px; height: 20px;
+    background-color: #fafaef;
+    font-size: 18px;
+    border-radius: 5px;
+    border: 0;
+}
