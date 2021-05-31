@@ -3,12 +3,22 @@ const app = express();
 const PORT = process.env.PORT || 4000;
 const db = require('./config/db');
 
-app.get('/api/products', (req, res) => {
-  db.query("SELECT * FROM mall_test", (err, data) => {
-      if(!err) res.send({ products : data });
-      else res.send(err);
+app.get('/api/host', (req, res) =>{
+  res.send({ host: 'kgu' });
+})
+
+app.get('/api/test', (req, res) => {
+  db.query("select * from customer", (err, data) => {
+      if(!err) {
+          res.send(data);
+
+      } else {
+          console.log(err);
+          res.send(err);
+      }
   })
 })
+
 app.listen(PORT, () => {
   console.log(`Server On : http://localhost:${PORT}/`);
 })

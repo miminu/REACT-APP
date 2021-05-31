@@ -1,21 +1,26 @@
-body {
+.body {
      margin: 0 auto;
     background: #fafaef;
 }
 h4 {margin: 5px;}
-p { margin: 5px; }
+p[id="web"] { margin: 5px; 
+    font-family: 'ELAND_Choice_M';
+}
 .logo {
-    text-decoration: none;
+    text-decoration: none !important;
     color: black;
-    font-size: 30px;
+    font-size: 35px;
     text-align: center;
+    margin-top: 20px;
     margin-bottom: 0;
+    font-family: 'Cafe24Dangdanghae';
 }
 .description {
     font-size: 15px; 
     text-align: center;
     margin-top: 0;
     margin-bottom: 30px;
+    font-family: 'MapoFlowerIsland';
 }
 #content {
     text-align: center;
@@ -24,6 +29,7 @@ p { margin: 5px; }
 }
 .main-head {
     padding: 50px 0; margin: 20px;
+    font-family: 'Cafe24Ohsquare';
 }
 .main-middle{
     margin:50px 100px; 
@@ -40,12 +46,13 @@ p { margin: 5px; }
 .map p{
     margin: 5px;
 }
-button {
+button[id="reservation"] {
     width: 250px; height: 40px;
     margin: 50px;
     background-color: lightgrey;
     border-radius: 5px;
     border: 0;
+    font-family: 'ELAND_Choice_M';
 }
 div[id="modal"] {
     background: #fafaef;
@@ -54,9 +61,11 @@ div[id="modal"] {
     margin:30px 40px 50px 50px; 
     text-align: left;
     font-size: 14px;
+    font-family: 'ELAND_Choice_M';
 }
 .modal-cancel{
     margin: 70px 50px; 
+    font-family: 'ELAND_Choice_M';
 }
 button[id="modal"] {
     width: 100px; height: 40px;
@@ -64,6 +73,7 @@ button[id="modal"] {
     background-color: lightgrey;
     border-radius: 5px;
     border: 0;
+    font-family: 'ELAND_Choice_M';
 }
 button[id="close"] {
     float: right;
@@ -73,4 +83,33 @@ button[id="close"] {
     font-size: 18px;
     border-radius: 5px;
     border: 0;
+    font-family: 'ELAND_Choice_M';
+}
+
+@font-face {
+    font-family: 'Cafe24Dangdanghae';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.2/Cafe24Dangdanghae.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ELAND_Choice_M';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts-20-12@1.0/ELAND_Choice_M.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MapoFlowerIsland';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/MapoFlowerIslandA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cafe24Ohsquare';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/Cafe24Ohsquare.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }

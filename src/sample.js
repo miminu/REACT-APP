@@ -5,8 +5,8 @@ import "./reservationCheck.css";
 class sample extends Component{
 render(){
     return (
-      <body>
-        <Link to="/">
+      <div className="body">
+        <Link to="/reservation" style={{textDecoration: 'none'}}>
         <h1 class="logo">Walking On The Cloud</h1>
         </Link>
         <h2 class="description">European Restaurant & Bar</h2>
@@ -25,7 +25,7 @@ render(){
                 <p>동시간대 손님이 몰릴경우 음식이 다소 늦게 나오는 점 미리 양해 말씀드립니다.</p>
             </div>
         </div>
-      </body>
+      </div>
     );
   }
 }

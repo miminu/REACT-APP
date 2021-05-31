@@ -1,0 +1,34 @@
+.main {
+    display: grid;
+    grid-template-columns: 250px 800px;
+}
+.input {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+}
+.input2 {
+    display: grid;
+}
+.noresize { resize: none;}
+
+button[id="mpage"] {
+    width: 70px; height: 30px;
+    margin: 20px;
+    background-color: rgb(80, 160, 252);
+    border-radius: 5px;
+    border: 0;
+}
+p[id="remark"] {
+    margin-top: 0;
+    margin-left: 20px;
+    margin-bottom: 30px;
+}
+#main-left { border-right: solid 1px black;}
+#main {margin: 0 20px;}
+#sub { 
+    margin-top: 30px;
+    margin-left: 20px;
+    margin-bottom: 5px;
+}
+#input { margin: 30px 20px}
+#input2 { margin: 30px 20px}
