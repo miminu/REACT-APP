@@ -1,34 +1,79 @@
 .main {
     display: grid;
-    grid-template-columns: 250px 800px;
+    grid-template-columns: 250px 750px;
 }
-.input {
+.block {
     display: grid;
-    grid-template-columns: 30% 30% 30%;
-}
-.input2 {
-    display: grid;
+    grid-template-columns: 35% 35% 30%;
+    font-family: 'ELAND_Choice_M';
 }
 .noresize { resize: none;}
+.check {
+    
+    margin-left: auto;
+    margin-right: auto;
+}
 
+hr[id="manager"] {
+    width: 100%
+}
+h1[id="logo"] { 
+    font-family: 'Cafe24Dangdanghae'; 
+    color: black;
+    font-size: 30px;
+}
+h3[id="banner"] { 
+    font-family: 'ELAND_Choice_M';
+    color: black;
+    margin: 35px 15px;
+}
 button[id="mpage"] {
     width: 70px; height: 30px;
     margin: 20px;
     background-color: rgb(80, 160, 252);
     border-radius: 5px;
     border: 0;
+    font-family: 'ELAND_Choice_M';
 }
 p[id="remark"] {
-    margin-top: 0;
-    margin-left: 20px;
+    margin-top: 5px;
+    margin-left: 40px;
     margin-bottom: 30px;
+    font-size: 13px; 
+    font-family: 'ELAND_Choice_M';
 }
-#main-left { border-right: solid 1px black;}
-#main {margin: 0 20px;}
+
+#main-left { border-right: solid 1px black; }
+#main {
+    margin: 0 20px;
+    height: 800px;
+}
 #sub { 
-    margin-top: 30px;
-    margin-left: 20px;
-    margin-bottom: 5px;
+    margin-top: 25px;
+    margin-left: 40px;
+    margin-bottom: 0px;
+    font-family: 'ELAND_Choice_M';
 }
-#input { margin: 30px 20px}
-#input2 { margin: 30px 20px}
+#input { margin:  15px 15px 30px 40px}
+#input2 { margin: 15px 30px}
+
+@font-face {
+    font-family: 'ELAND_Choice_M';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts-20-12@1.0/ELAND_Choice_M.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cafe24Dangdanghae';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.2/Cafe24Dangdanghae.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cafe24Ohsquare';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/Cafe24Ohsquare.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
